@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getToken } from '../auth';
 
-export default function Dashboard() {
+export default function Todos() {
   const [todos, setTodos] = useState([]);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');

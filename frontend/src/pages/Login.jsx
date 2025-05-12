@@ -16,7 +16,7 @@ export default function Login() {
     const data = await res.json();
     if (res.ok) {
       setToken(data.token);
-      navigate('/');
+      navigate('/dashboard');
     } else {
       alert(data.error);
     }

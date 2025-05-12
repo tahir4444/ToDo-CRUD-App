@@ -5,7 +5,7 @@ export default function Admin() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/users`, {
+    fetch(`${import.meta.env.VITE_API_URL}/auth/users`, {
       headers: { Authorization: `Bearer ${getToken()}` },
     })
       .then((res) => res.json())
