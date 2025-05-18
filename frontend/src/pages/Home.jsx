@@ -1,8 +1,11 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { setToken } from '../auth';
+import React from 'react';
 
-const Home = () => {
-  return <div>Home page</div>;
-};
+const Home = () => (
+  <div>
+    <h1>Welcome to the ToDo App!</h1>
+    <p>Please register or login to continue.</p>
+  </div>
+);
+
 export default Home;
+// This is a simple home page component for a ToDo app.
